@@ -169,8 +169,8 @@ I held all hyperparameters and training procedures strictly identical across all
 ### Installation
 Clone my repository and install dependencies:
 ```bash
-git clone https://github.com/eltonlewis/fgai-autoregressive-text-generation.git
-cd fgai-autoregressive-text-generation
+git clone https://github.com/Elton1025/FGAI.git
+cd FGAI
 pip install -r requirements.txt
 ```
 
