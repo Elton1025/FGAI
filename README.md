@@ -341,7 +341,6 @@ Based on the empirical evidence of this run:
 ```
 .
 ├── autoregressive_text_generation.ipynb   # Complete interactive notebook with code, outputs & markdown
-├── notebook94b14f6649.ipynb               # Original Kaggle experiment execution notebook
 ├── train_and_evaluate.py                  # Standalone modular Python pipeline (CLI support)
 ├── requirements.txt                       # Python dependencies
 ├── config.json                            # Experimental hyperparameters
