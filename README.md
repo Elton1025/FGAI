@@ -29,9 +29,9 @@ An empirical comparative study of word-level autoregressive language modeling th
 
 In this assignment, I formulate text generation as sequential autoregressive next-token prediction. By applying the chain rule of probability, I factorize the joint probability of a sequence of word tokens $\mathbf{w} = (w_1, w_2, \dots, w_T)$ into a product of conditional distributions:
 
-$$P(w_1, w_2, \dots, w_T) = \prod_{t=1}^{T} P(w_t \mid w_{<t})$$
+$$P(w_1, w_2, \dots, w_T) = \prod_{t=1}^{T} P(w_t \mid w_{1:t-1})$$
 
-Where $w_{<t} = (w_1, \dots, w_{t-1})$ represents the historical prefix context available to the model at step $t$.
+Where $w_{1:t-1} = (w_1, \dots, w_{t-1})$ represents the historical prefix context available to the model at step $t$.
 
 ### My Core Objectives:
 1. **Data Preprocessing & Causal Sequence Construction**: I construct an isolated, leak-free preprocessing pipeline on the WikiText-2 dataset, creating sliding-window input–target pairs $(X, y)$ where $X \in \mathbb{R}^{L}$ comprises $L = 30$ contiguous tokens and $y \in \mathbb{R}$ is the immediate next word token.
